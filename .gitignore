@@ -1,0 +1,25 @@
+#npm
+npm-debug.log
+
+#SASS
+.sass-cache/
+
+.DS_Store
+
+.baseDir.ts
+
+typings/
+
+#ignore the build directory
+build/
+
+.node_modules/
+
+node_modules/
+dist/
+
+uploads/
+
+src/tmp/
+
+# End of file
