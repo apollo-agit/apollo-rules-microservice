@@ -16,7 +16,7 @@ server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
 
 import {TenateRoute} from './routes/tenate.milpark.route';
-server.use('/api/auth', TenateRoute);
+server.use('/api', TenateRoute);
 
 server.use(express.static(__dirname + '/../public'));
 

@@ -8,8 +8,9 @@ import {TenateRuleController} from '../controllers/tenate.rule.controller';
 var wsRouter = express.Router();
 var tenateRuleController = new TenateRuleController();
 
-wsRouter.get('/user/:id', function(req, res) {
-	tenateRuleController.execute(null);
+wsRouter.post('/fact/check', function(req, res) {
+	var check: String = tenateRuleController.execute(req.body);
+	res.json({eval: check});
 })
 
 
