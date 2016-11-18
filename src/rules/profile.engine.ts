@@ -1,4 +1,4 @@
-//Basic Name Rule
+//Rule Engine for Profile
 import {RuleResponse} from '../model/response.model';
 
 var rules = [{
@@ -13,4 +13,3 @@ var rules = [{
 }];
 
 export var NameRules = rules;
-
