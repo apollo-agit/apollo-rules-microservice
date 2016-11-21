@@ -15,8 +15,8 @@ var server = express();
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
 
-import {TenateRoute} from './routes/tenate.milpark.route';
-server.use('/api', TenateRoute);
+import {TenantRoute} from './routes/tenant.milpark.route';
+server.use('/api', TenantRoute);
 
 server.use(express.static(__dirname + '/../public'));
 
